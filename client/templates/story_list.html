@@ -1,0 +1,17 @@
+<template name="storyList">
+    <section class="story-input">
+        {{#if currentUser}}
+            <form class="row">
+                <input class="columns ten newStory" type="text" placeholder="Start telling a new story..." maxlength="140" autofocus>
+                <button class="columns two button-primary newStory">Create &rarr;</button>
+            </form>
+        {{/if}}
+    </section>
+    <section class="stories">
+        {{#if currentUser}}
+            {{#each stories}}
+                {{> storyTitle}}
+            {{/each}}
+        {{/if}}
+    </section>
+</template>

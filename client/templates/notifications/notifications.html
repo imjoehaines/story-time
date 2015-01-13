@@ -1,0 +1,26 @@
+<template name="notifications">
+    {{#if notificationCount}}
+        <a class="notification-link" data-dropdown="#notification-dropdown">
+            {{notificationCount}} new notifications
+        </a>
+    {{/if}}
+</template>
+
+<template name="notificationsDropdown">
+    <div id="notification-dropdown" class="dropdown dropdown-tip">
+        <ul class="dropdown-menu">
+            {{#each notifications}}
+                {{> notificationItem}}
+            {{/each}}
+        </ul>
+    </div>
+</template>
+
+<template name="notificationItem">
+    <li>
+        <a href="#" class="notification-link">
+            <strong>{{chapterAuthor}}</strong> added a chapter to <strong>{{notificationStoryTitle}}</strong>
+            <time datetime="{{createdAt.toISOString}}" title="Posted at: {{notificationTime}}" class="date">{{notificationTime}}</time>
+        </a>
+    </li>
+</template>

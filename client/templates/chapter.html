@@ -1,0 +1,9 @@
+<template name="chapter">
+    <section class="row">
+        <strong>{{author}}</strong>
+    </section>
+    <section class="row">
+        <span class="two columns"><time datetime={{createdAt.toISOString}} title="Posted at: {{storyTitleDate}}" class="date"></time></span>
+        <p class="ten columns">{{text}}</p>
+    </section>
+</template>
