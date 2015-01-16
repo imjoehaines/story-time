@@ -24,8 +24,10 @@ header {
     margin-top: 10rem;
 }
 
-.not-found {
+.error-40x {
     text-align: center;
+    width: 50%;
+    margin: 4rem auto 0 auto;
 }
 
 button {
@@ -46,10 +48,6 @@ button {
     margin: 3rem 0;
 }
 
-.chapters {
-    margin-top: 3rem;
-}
-
 .story-title {
     padding: 2.5rem 0;
 }
@@ -64,7 +62,7 @@ button {
     font-size: 1.3rem;
 }
 
-.story-title:hover .delete {
+.story-title:hover .delete, .chapter:hover .delete {
     display: inline-block;
 }
 
@@ -91,10 +89,6 @@ a:hover time[datetime] {
     color: white;
 }
 
-.chapters .row:last-child {
-    margin-bottom: 10rem;
-}
-
 .stories .row:first-child {
     padding-top: 0;
 }
@@ -110,4 +104,12 @@ a:hover time[datetime] {
 
 .dropdown-menu li:last-child a {
     border: none;
+}
+
+.chapter {
+    padding: 1.5rem 0;
+}
+
+.chapter p {
+    margin: 0;
 }

@@ -20,13 +20,23 @@ Template.storyTitle.events({
             closeOnConfirm: false,
             confirmButtonColor: '#33C3F0'
         }, function() {
-            Stories.remove(storyId);
-            swal({
-                title: 'Deleted!',
-                text: 'Successfully deleted "' + currentStoryTitle + '"!',
-                type: 'success',
-                confirmButtonColor: '#33C3F0'            
-            });
+            // remove returns 1 on success, 0 on false
+            var success = Stories.remove(storyId);
+            if(success == 1) {
+                swal({
+                    title: 'Deleted!',
+                    text: 'Successfully deleted "' + currentStoryTitle + '"!',
+                    type: 'success',
+                    confirmButtonColor: '#33C3F0'
+                });                
+            } else {
+                swal({
+                    title: 'Oops! :(',
+                    text: 'We couldn\t delete "' + currentStoryTitle + '" right now, try again later.',
+                    type: 'error',
+                    confirmButtonColor: '#33C3F0'
+                });                
+            }
         });
     }
 });

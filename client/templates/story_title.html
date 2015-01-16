@@ -1,7 +1,7 @@
 <template name="storyTitle">
     <section class="row story-title">
         <h2>
-            <a href="{{pathFor 'storyPage'}}">{{title}}</a> <span class="chapter-count">&ndash; ({{chapterCount}} chapters)</span>
+            <a href="{{pathFor 'storyPage'}}">{{title}}</a> <span class="chapter-count">({{chapterCount}} chapters)</span>
         </h2>
         <em>Created <time datetime="{{createdAt.toISOString}}" title="Posted at: {{storyTitleDate}}" class="date">{{storyTitleDate}}</time> by {{author}}</em>
         {{#if ownPost}}<a class="delete u-pull-right" href="#">Delete This Story</a>{{/if}}

@@ -1,9 +1,12 @@
 <template name="chapter">
-    <section class="row">
-        <strong>{{author}}</strong>
-    </section>
-    <section class="row">
-        <span class="two columns"><time datetime={{createdAt.toISOString}} title="Posted at: {{storyTitleDate}}" class="date"></time></span>
-        <p class="ten columns">{{text}}</p>
+    <section class="chapter">
+        <section class="row">
+            <strong>{{author}}</strong>
+            {{#if canDeleteChapter}}<a class="delete u-pull-right" href="#">Delete This Chapter</a>{{/if}}
+        </section>
+        <section class="row">
+            <span class="two columns"><time datetime={{createdAt.toISOString}} title="Posted at: {{storyTitleDate}}" class="date"></time></span>
+            <p class="ten columns">{{text}}</p>
+        </section>
     </section>
 </template>
