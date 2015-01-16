@@ -9,5 +9,5 @@ accounts-password
 accounts-ui-unstyled
 jquery
 iron:router
-sacha:spin
 peppelg:on-login-logout
+meteorhacks:fast-render

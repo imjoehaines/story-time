@@ -21,7 +21,7 @@ header {
 }
 
 .container {
-    margin-top: 10rem;
+    margin: 10rem auto;
 }
 
 .error-40x {

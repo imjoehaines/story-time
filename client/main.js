@@ -1,10 +1,3 @@
-// Meteor.subscribe('chapters');
-
-Meteor.Spinner.options = {
-    top: '10rem',
-    width: 2
-};
-
 Accounts.ui.config({
     passwordSignupFields: 'USERNAME_AND_EMAIL'
 });
