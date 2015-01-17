@@ -2,7 +2,7 @@
     <section class="chapter">
         <section class="row">
             <strong>{{author}}</strong>
-            {{#if canDeleteChapter}}<a class="delete u-pull-right" href="#">Delete This Chapter</a>{{/if}}
+            {{#if canDeleteChapter}}<a class="delete u-pull-right" href="#"><span class="delete-text">Delete This Chapter</span> <span class="icon-delete"></span></a>{{/if}}
         </section>
         <section class="row">
             <span class="two columns"><time datetime={{createdAt.toISOString}} title="Posted at: {{storyTitleDate}}" class="date"></time></span>

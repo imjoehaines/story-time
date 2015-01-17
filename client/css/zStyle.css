@@ -20,6 +20,28 @@ header {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    border-bottom: 1px solid #1EAEDB;
+}
+
+h1 a, h1 a:hover {
+    border-bottom: none;
+}
+
+time[datetime] {
+    cursor: help;
+    border-bottom: 1px dotted #ccc;
+}
+
+a:hover time[datetime] {
+    color: white;
+}
+
 .container {
     margin: 10rem auto;
 }
@@ -58,35 +80,19 @@ button {
 }
 
 .delete {
-    display: none;
     font-size: 1.3rem;
 }
 
-.story-title:hover .delete, .chapter:hover .delete {
+.delete-text {
+    display: none;
+}
+
+.story-title:hover .delete-text, .chapter:hover .delete-text {
     display: inline-block;
 }
 
-a {
-    text-decoration: none;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
-}
-
-a:hover {
-    border-bottom: 1px solid #1EAEDB;
-}
-
-h1 a, h1 a:hover {
-    border-bottom: none;
-}
-
-time[datetime] {
-    cursor: help;
-    border-bottom: 1px dotted #ccc;
-}
-
-a:hover time[datetime] {
-    color: white;
+.icon-delete {
+    color: #DB4B1E;
 }
 
 .stories .row:first-child {
@@ -112,4 +118,22 @@ a:hover time[datetime] {
 
 .chapter p {
     margin: 0;
+}
+
+/* media queries */
+
+@media (max-width: 400px) {
+
+    .container {
+        margin: 2rem auto;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    .story-input {
+        margin: 1rem 0;
+    }
+
 }
