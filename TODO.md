@@ -13,6 +13,7 @@
 - Add pagination to chapters
 - Implement turns for writing chapters
     - each user should only be able to write one consecutive chapter per story
+- Make the 'Load More' button look nicer
 
 #Done
 - Add pagination to stories

@@ -27,6 +27,7 @@ a {
 
 a:hover {
     border-bottom: 1px solid #1EAEDB;
+    opacity: 1;
 }
 
 h1 a, h1 a:hover {
@@ -81,18 +82,18 @@ button {
 
 .delete {
     font-size: 1.5rem;
+    opacity: 0.2;
+    -webkit-transition: opacity 250ms ease-out;
+    -o-transition: opacity 250ms ease-out;
+    transition: opacity 250ms ease-out;
 }
 
-.delete-text {
-    display: none;
+.delete:hover {
+    border: none;
 }
 
 .story-title .delete {
     padding-top: 1.5rem;
-}
-
-.story-title:hover .delete-text, .chapter:hover .delete-text {
-    display: inline;
 }
 
 .icon-delete {
@@ -138,12 +139,6 @@ button {
 
     .story-input {
         margin: 1rem 0;
-    }
-
-    /* mobile devices 'hover' on touch but this also fires the delete event 
-       before the delete text is visible so we hide the text to stop this */
-    .story-title:hover .delete-text, .chapter:hover .delete-text {
-        display: none;
     }
 
 }
