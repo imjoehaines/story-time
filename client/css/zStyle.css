@@ -87,8 +87,12 @@ button {
     display: none;
 }
 
+.story-title .delete {
+    padding-top: 1.5rem;
+}
+
 .story-title:hover .delete-text, .chapter:hover .delete-text {
-    display: inline-block;
+    display: inline;
 }
 
 .icon-delete {
@@ -134,6 +138,12 @@ button {
 
     .story-input {
         margin: 1rem 0;
+    }
+
+    /* mobile devices 'hover' on touch but this also fires the delete event 
+       before the delete text is visible so we hide the text to stop this */
+    .story-title:hover .delete-text, .chapter:hover .delete-text {
+        display: none;
     }
 
 }

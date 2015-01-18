@@ -25,7 +25,7 @@ Template.storyTitle.events({
                 if(error) {
                     return swal({
                         title: 'Oops! :(',
-                    text: 'We couldn\t delete "' + storyTitle + '" right now, try again later.',
+                        text: 'We couldn\t delete "' + storyTitle + '" right now, try again later.',
                         type: 'error',
                         confirmButtonColor: '#33C3F0'
                     });

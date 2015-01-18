@@ -11,6 +11,8 @@ boilerplate-generator@1.0.2
 callback-hook@1.0.2
 check@1.0.3
 chuangbo:cookie@1.1.0
+coffeescript@1.0.5
+dburles:mongo-collection-instances@0.2.6
 ddp@1.0.13
 deps@1.0.6
 ejson@1.0.5
@@ -18,6 +20,7 @@ email@1.0.5
 fastclick@1.0.2
 follower-livedata@1.0.3
 geojson-utils@1.0.2
+houston:admin@2.0.1
 html-tools@1.0.3
 htmljs@1.0.3
 http@1.0.9
@@ -48,6 +51,8 @@ npm-bcrypt@0.7.7
 observe-sequence@1.0.4
 ordered-dict@1.0.2
 peppelg:on-login-logout@1.0.0
+percolate:momentum@0.7.0
+percolate:velocityjs@1.1.0
 random@1.0.2
 reactive-dict@1.0.5
 reactive-var@1.0.4
@@ -61,6 +66,7 @@ spacebars@1.0.4
 spacebars-compiler@1.0.4
 srp@1.0.2
 templating@1.0.10
+tmeasday:paginated-subscription@0.2.4
 tracker@1.0.4
 ui@1.0.5
 underscore@1.0.2

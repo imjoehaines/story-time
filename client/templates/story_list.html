@@ -9,13 +9,15 @@
     </section>
     <section class="stories">
         {{#if currentUser}}
-            {{#each stories}}
-                {{> storyTitle}}
-            {{/each}}
+            {{#momentum plugin='slide-height'}}
+                {{#each stories}}
+                    {{> storyTitle}}
+                {{/each}}
 
-            {{#if nextPath}}
-                <a href="{{nextPath}}" class="load-more">Load More</a>
-            {{/if}}
+                {{#if nextPath}}
+                    <a href="{{nextPath}}" class="load-more">Load More</a>
+                {{/if}}
+            {{/momentum}}
         {{/if}}
     </section>
 </template>

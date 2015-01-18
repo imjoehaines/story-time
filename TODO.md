@@ -4,9 +4,10 @@
 - Animations and related polishing stuff
 - Remove notifications when removing stories/chapters
 - Replace dropdown used for notifications with a better library
+- Add pagination to chapters
 
 #Done
-- Add pagination
+- Add pagination to stories
 - Add mobile compatability for delete story/chapter buttons
 - Remove chapters when removing a story
 - Make story_title call a method to delete story

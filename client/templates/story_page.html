@@ -12,8 +12,10 @@
     <em>Created <time title="Posted at {{storyTitleDate}}" datetime="{{createdAt.toISOString}}"></time> by {{author}}</em>
     
     <section class="chapters">
-        {{#each chapterList}}
-            {{> chapter}}
-        {{/each}}
+        {{#momentum plugin='slide-height'}}
+            {{#each chapterList}}
+                {{> chapter}}
+            {{/each}}
+        {{/momentum}}
     </section>
 </template>

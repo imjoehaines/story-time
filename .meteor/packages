@@ -11,3 +11,5 @@ jquery
 iron:router
 peppelg:on-login-logout
 meteorhacks:fast-render
+percolate:momentum
+houston:admin
