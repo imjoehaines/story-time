@@ -12,6 +12,10 @@
             {{#each stories}}
                 {{> storyTitle}}
             {{/each}}
+
+            {{#if nextPath}}
+                <a href="{{nextPath}}" class="load-more">Load More</a>
+            {{/if}}
         {{/if}}
     </section>
 </template>

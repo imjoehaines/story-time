@@ -7,19 +7,20 @@ Template.registerHelper('storyTitleDate', function() {
         dateString = '',
         now = new Date();
 
+    dateString = date.getHours();
+
+    if(date.getMinutes() > 10) {
+        dateString += ':' + date.getMinutes();
+    } else {
+        dateString += ':0' + date.getMinutes();
+    }
+
     if(date.getFullYear() != now.getFullYear() ||
         date.getMonth() != now.getMonth() ||
         date.getDate() != now.getDate()) {
-            dateString = date.getFullYear();
+            dateString += ' on ' + date.getFullYear();
             dateString += '/' + date.getMonth() + 1;
             dateString += '/' + date.getDate();
-    } else {
-        dateString = date.getHours();
-
-        if(date.getMinutes() > 10)
-            dateString += ':' + date.getMinutes();
-        else
-            dateString += ':0' + date.getMinutes();
     }
 
     return dateString;

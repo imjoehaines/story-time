@@ -1,9 +1,3 @@
-Template.storyList.helpers({
-    stories: function() {
-        return Stories.find({}, {sort: {createdAt: -1}});
-    }
-});
-
 Template.storyList.events({
     'submit': function(e) {
         e.preventDefault();
