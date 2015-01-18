@@ -29,8 +29,7 @@ Template.storyPage.events({
                         confirmButtonColor: '#33C3F0'
                     });
                 }
-            });
-
+            });   
         }
     }
 });

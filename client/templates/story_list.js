@@ -2,17 +2,17 @@ Template.storyList.events({
     'submit': function(e) {
         e.preventDefault();
         var newStoryInput = $('input.newStory');
+        var newStory = newStoryInput.val();
+        newStoryInput.val('');
 
-        if(newStoryInput.val().length !== 0) {            
+        if(newStory.length !== 0) {            
             var story = {
-                title: newStoryInput.val(),
+                title: newStory,
             };
 
             Meteor.call('newStory', story, function(error, result) {
                 if(error)
                     return alert(error.reason);
-
-                newStoryInput.val('');
 
                 swal({
                     title: 'Success!',
