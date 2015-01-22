@@ -4,6 +4,11 @@ Template.notifications.helpers({
     },
     notificationCount: function() {
         return Notifications.find({userId: Meteor.userId(), read:false}).count();
+    },
+    notificationText: function() {
+        var count = Notifications.find({userId: Meteor.userId(), read:false}).count();
+
+        return count > 1 && 'notifications!' || 'notification!';
     }
 });
 
@@ -12,7 +17,7 @@ Template.notificationItem.helpers({
         return Router.routes.storyPage.path({_id: this.storyId});
     },
     notificationStoryTitle: function() {
-        return Stories.findOne({_id: this.storyId}).title;
+        return Notifications.findOne({_id: this._id}).storyTitle;
     },
     notificationTime: function() {
         return Notifications.findOne({_id: this._id}).createdAt;

@@ -1,14 +1,17 @@
 <template name="layout">
+    <aside class="notification-center">
+        {{#if currentUser}}
+            {{> notifications}}
+        {{/if}}
+    </aside>
+
+
     <div class="container">
         <div class="row">
             <header class="column twelve">
                 <h1><a href="/">Story Time</a></h1>
 
                 {{> loginButtons}}
-                
-                {{#if currentUser}}
-                    {{> notifications}}
-                {{/if}}
             </header>
         </div>
         

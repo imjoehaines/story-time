@@ -53,13 +53,23 @@ a:hover time[datetime] {
     margin: 4rem auto 0 auto;
 }
 
-button {
+button, .button-primary {
     text-transform: none;
     font-size: 1.25rem;
 }
 
+.notification-center {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
 .notification-link {
-    font-size: 1.5rem;
+    padding: 0.2rem 0.66rem;
+}
+
+.notification-link:hover {
+    border: none;
 }
 
 .sweet-alert button {
@@ -72,7 +82,7 @@ button {
 }
 
 .story-title {
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
 }
 
 .date {
@@ -125,12 +135,18 @@ button {
     margin: 0;
 }
 
+.load-more {
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+}
+
 /* media queries */
 
 @media (max-width: 400px) {
 
     .container {
-        margin: 2rem auto;
+        margin: 3rem auto;
     }
 
     h1 {
@@ -139,6 +155,22 @@ button {
 
     .story-input {
         margin: 1rem 0;
+    }
+
+    .notification-center {
+        position: fixed;
+        top: 0.25rem;
+        left: 0.5rem;
+    }
+
+    .notification-link {
+        font-size: 1.25rem;
+        padding: 0.05rem 0.33rem;
+    }
+
+
+    .story-title {
+        padding: 1rem 0;
     }
 
 }

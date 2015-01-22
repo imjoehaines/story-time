@@ -1,7 +1,7 @@
 <template name="notifications">
     {{#if notificationCount}}
         <a class="notification-link" data-dropdown="#notification-dropdown">
-            {{notificationCount}} new notifications
+            {{notificationCount}} {{notificationText}}
         </a>
     {{/if}}
 </template>
@@ -20,7 +20,7 @@
     <li>
         <a href="#" class="notification-link">
             <strong>{{chapterAuthor}}</strong> added a chapter to <strong>{{notificationStoryTitle}}</strong>
-            <time datetime="{{createdAt.toISOString}}" title="Posted at {{notificationTime}}" class="date">{{notificationTime}}</time>
+            <!-- <time datetime="{{createdAt.toISOString}}" title="Posted at {{notificationTime}}" class="date">{{notificationTime}}</time> -->
         </a>
     </li>
 </template>
