@@ -1,8 +1,9 @@
 <template name="chapter">
     <section class="chapter">
         <section class="row">
-            <strong>{{author}}</strong>
+            <h3>{{author}}
             {{#if canDeleteChapter}}<a class="delete u-pull-right" href="#"><span class="icon-delete" title="Delete This Chapter"></span></a>{{/if}}
+        </h3>
         </section>
         <section class="row">
             <span class="two columns"><time datetime={{createdAt.toISOString}} title="Posted at {{storyTitleDate}}" class="date"></time></span>

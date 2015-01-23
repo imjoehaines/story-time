@@ -10,14 +10,13 @@
 - Add pagination to chapters
 - Implement turns for writing chapters
     - each user should only be able to write one consecutive chapter per story
-- Add Title Notifier (http://roshiro.github.io/TitleNotifier.js/)
 
 #Done
-- Add pagination to stories
-- Add mobile compatability for delete story/chapter buttons
-- Remove chapters when removing a story
-- Make story_title call a method to delete story
-- Make the 'Load More' button look nicer
-- Remove notifications when removing stories/chapters
-- Move the notifcation link so it doesn't change page flow (add to a corner?)
-- Animations for inserting/deleting stories & chapters
+- ~~Add pagination to stories~~
+- ~~Add mobile compatability for delete story/chapter buttons~~
+- ~~Remove chapters when removing a story~~
+- ~~Make story_title call a method to delete story~~
+- ~~Make the 'Load More' button look nicer~~
+- ~~Remove notifications when removing stories/chapters~~
+- ~~Move the notifcation link so it doesn't change page flow (add to a corner?)~~
+- ~~Animations for inserting/deleting stories & chapters~~
