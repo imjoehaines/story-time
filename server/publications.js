@@ -1,6 +1,11 @@
-Meteor.publish('chapters', function(storyId) {
+Meteor.publish('chapters', function(storyId, options) {
     check(storyId, String);
-    return Chapters.find({storyId: storyId});
+    check(options, {
+        sort: Object,
+        limit: Number
+    });
+
+    return Chapters.find({storyId: storyId}, options);
 });
 
 Meteor.publish('stories', function(options) {

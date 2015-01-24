@@ -2,8 +2,9 @@ Accounts.ui.config({
     passwordSignupFields: 'USERNAME_AND_EMAIL'
 });
 
-Template.registerHelper('storyTitleDate', function() {
-    var date = this.createdAt,
+Template.registerHelper('storyTitleDate', function(story) {
+    story = story.hash.story;
+    var date = story.createdAt,
         dateString = '',
         now = new Date();
 

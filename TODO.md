@@ -7,9 +7,9 @@
     - need to animate routes but it seems no good way to do this yet 
 - Replace dropdown used for notifications with a better library
     - could add growl style notifcations too
-- Add pagination to chapters
 - Implement turns for writing chapters
     - each user should only be able to write one consecutive chapter per story
+- Number chapters
 
 #Done
 - ~~Add pagination to stories~~
@@ -20,3 +20,4 @@
 - ~~Remove notifications when removing stories/chapters~~
 - ~~Move the notifcation link so it doesn't change page flow (add to a corner?)~~
 - ~~Animations for inserting/deleting stories & chapters~~
+- ~~Add pagination to chapters~~

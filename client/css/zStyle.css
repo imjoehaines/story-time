@@ -147,7 +147,6 @@ button, .button-primary {
 }
 
 /* media queries */
-
 @media (max-width: 400px) {
 
     .container {

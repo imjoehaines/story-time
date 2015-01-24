@@ -1,9 +1,6 @@
 Template.storyPage.helpers({
-    chapterList: function() {
-        return Chapters.find({storyId: this._id}, {sort: {createdAt: -1}});
-    },
     storyTitle: function() {
-        return Stories.findOne({_id: this._id}).title;
+        return Stories.findOne({_id: this.story._id}).title;
     }
 });
 
@@ -17,7 +14,7 @@ Template.storyPage.events({
         if(newChapter.length !== 0) {            
             var chapter = {
                 text: newChapter,
-                storyId: this._id
+                storyId: this.story._id
             };
 
             Meteor.call('newChapter', chapter, function(error, result) {
