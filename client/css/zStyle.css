@@ -64,6 +64,7 @@ button, .button-primary {
     text-transform: none;
     font-size: 1.25rem;
     transition: background-color 250ms ease-out;
+    margin-bottom: 0;
 }
 
 .notification-center {
@@ -175,6 +176,10 @@ button, .button-primary {
 
     .story-title {
         padding: 1rem 0;
+    }
+
+    .error-40x {
+        width: 100%;
     }
 
 }

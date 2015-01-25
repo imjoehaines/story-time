@@ -10,9 +10,9 @@
 
     {{#if storyReady}}
         <h2>{{storyTitle}}</h2>
-        <p>Created <time title="Posted at {{storyTitleDate story=this.story}}" datetime="{{this.story.createdAt.toISOString}}"></time> by {{this.story.author}}</p>
+        <p>Created <time title="{{storyTitleDate story=this.story}}" datetime="{{this.story.createdAt.toISOString}}"></time> by {{this.story.author}}</p>
     {{/if}}
-    
+
     <section class="chapters">
         {{#momentum plugin='slide-height'}}
             {{#each chapterList}}
@@ -20,7 +20,9 @@
             {{/each}}
 
             {{#if nextPath}}
-                <a href="{{nextPath}}" class="load-more button button-primary">Load More</a>
+                <section class="load-more">
+                    <a href="{{nextPath}}" class="button button-primary">Load More</a>
+                </section>
             {{/if}}
         {{/momentum}}
     </section>

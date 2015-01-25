@@ -4,6 +4,6 @@
             <a href="{{pathFor 'storyPage'}}">{{title}}</a> <span class="chapter-count">({{chapterCount}} chapters)</span>
             {{#if ownPost}}<a class="delete u-pull-right" href="#"><span class="icon-delete" title="Delete This Story"></span></a>{{/if}}
         </h2>
-        <p>Created <time datetime="{{createdAt.toISOString}}" title="Posted at {{storyTitleDate story=this}}" class="date">{{storyTitleDate story=this}}</time> by {{author}}</p>
+        <p>Created <time datetime="{{createdAt.toISOString}}" title="{{storyTitleDate story=this}}" class="date">{{storyTitleDate story=this}}</time> by {{author}}</p>
     </section>
 </template>
