@@ -28,11 +28,14 @@ p {
 a {
     text-decoration: none;
     cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 125ms ease-out, color 250ms ease-out, background-color 250ms ease-out;
 }
 
 a:hover {
-    border-bottom: 1px solid #1EAEDB;
+    border-bottom: 1px solid #258AC3;
     opacity: 1;
+    color: #258AC3;
 }
 
 h1 a, h1 a:hover {
@@ -60,6 +63,7 @@ a:hover time[datetime] {
 button, .button-primary {
     text-transform: none;
     font-size: 1.25rem;
+    transition: background-color 250ms ease-out;
 }
 
 .notification-center {
@@ -97,8 +101,6 @@ button, .button-primary {
 .delete {
     font-size: 1.5rem;
     opacity: 0.2;
-    -webkit-transition: opacity 250ms ease-out;
-    -o-transition: opacity 250ms ease-out;
     transition: opacity 250ms ease-out;
 }
 

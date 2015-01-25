@@ -48,6 +48,7 @@
     cursor: pointer;
     box-sizing: border-box;
     margin: 0.25rem 0;
+    transition: background-color 250ms ease-out, border-color 250ms ease-out;
 }
 
 .login-button,
@@ -66,8 +67,8 @@
 .additional-link:hover,
 .additional-link:focus {
     color: #FFF;
-    background-color: #1EAEDB;
-    border-color: #1EAEDB;
+    background-color: #258AC3;
+    border-color: #258AC3;
 }
 
 .login-close-text {
