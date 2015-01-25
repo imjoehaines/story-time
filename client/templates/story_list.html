@@ -8,10 +8,10 @@
         </section>
     {{/if}}
 
-    {{#if ready}}
-        <section class="stories">
-            {{#if currentUser}}
-                {{#momentum plugin='slide-height'}}
+    {{#momentum plugin='slide-height'}}
+        {{#if ready}}
+            <section class="stories">
+                {{#if currentUser}}
                     {{#each stories}}
                         {{> storyTitle}}
                     {{/each}}
@@ -19,8 +19,8 @@
                     {{#if nextPath}}
                         <a href="{{nextPath}}" class="load-more button button-primary">Load More</a>
                     {{/if}}
-                {{/momentum}}
-            {{/if}}
-        </section>
-    {{/if}}
+                {{/if}}
+            </section>
+        {{/if}}
+    {{/momentum}}
 </template>
