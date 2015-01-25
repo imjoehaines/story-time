@@ -10,6 +10,7 @@
 - Implement turns for writing chapters
     - each user should only be able to write one consecutive chapter per story
 - Number chapters
+- Add server-side error logging
 
 #Done
 - ~~Add pagination to stories~~

@@ -8,18 +8,20 @@
         {{/if}}
     </section>
 
-    <h2>{{storyTitle}}</h2>
-    <p>Created <time title="Posted at {{storyTitleDate story=this.story}}" datetime="{{this.story.createdAt.toISOString}}"></time> by {{this.story.author}}</p>
-    
-    <section class="chapters">
-        {{#momentum plugin='slide-height'}}
-            {{#each chapterList}}
-                {{> chapter}}
-            {{/each}}
+    {{#if ready}}
+        <h2>{{storyTitle}}</h2>
+        <p>Created <time title="Posted at {{storyTitleDate story=this.story}}" datetime="{{this.story.createdAt.toISOString}}"></time> by {{this.story.author}}</p>
+        
+        <section class="chapters">
+                {{#momentum plugin='slide-height'}}
+                    {{#each chapterList}}
+                        {{> chapter}}
+                    {{/each}}
 
-            {{#if nextPath}}
-                <a href="{{nextPath}}" class="load-more button button-primary">Load More</a>
-            {{/if}}
-        {{/momentum}}
-    </section>
+                    {{#if nextPath}}
+                        <a href="{{nextPath}}" class="load-more button button-primary">Load More</a>
+                    {{/if}}
+                {{/momentum}}
+        </section>
+    {{/if}}
 </template>

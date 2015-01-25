@@ -1,23 +1,26 @@
 <template name="storyList">
-    <section class="story-input">
-        {{#if currentUser}}
+    {{#if currentUser}}
+        <section class="story-input">
             <form class="row">
                 <input class="columns ten newStory" type="text" placeholder="Start telling a new story..." maxlength="140">
                 <button class="columns two button-primary newStory">Create &rarr;</button>
             </form>
-        {{/if}}
-    </section>
-    <section class="stories">
-        {{#if currentUser}}
-            {{#momentum plugin='slide-height'}}
-                {{#each stories}}
-                    {{> storyTitle}}
-                {{/each}}
+        </section>
+    {{/if}}
 
-                {{#if nextPath}}
-                    <a href="{{nextPath}}" class="load-more button button-primary">Load More</a>
-                {{/if}}
-            {{/momentum}}
-        {{/if}}
-    </section>
+    {{#if ready}}
+        <section class="stories">
+            {{#if currentUser}}
+                {{#momentum plugin='slide-height'}}
+                    {{#each stories}}
+                        {{> storyTitle}}
+                    {{/each}}
+
+                    {{#if nextPath}}
+                        <a href="{{nextPath}}" class="load-more button button-primary">Load More</a>
+                    {{/if}}
+                {{/momentum}}
+            {{/if}}
+        </section>
+    {{/if}}
 </template>
