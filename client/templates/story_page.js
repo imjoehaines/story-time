@@ -1,6 +1,9 @@
 Template.storyPage.helpers({
     storyTitle: function() {
         return Stories.findOne({_id: this.story._id}).title;
+    },
+    chapterCount: function() {
+        return Stories.findOne({_id: this.story._id}).chapterCount;
     }
 });
 

@@ -15,10 +15,11 @@
 
     <section class="chapters">
         {{#momentum plugin='slide-height'}}
-            {{#each chapterList}}
-                {{> chapter}}
-            {{/each}}
-
+            <ol reversed start="{{chapterCount}}">
+                {{#each chapterList}}
+                    <li>{{> chapter}}</li>
+                {{/each}}
+            </ol>
             {{#if nextPath}}
                 <section class="load-more">
                     <a href="{{nextPath}}" class="button button-primary">Load More</a>
