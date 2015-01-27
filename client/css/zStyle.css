@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Pacifico|Raleway);
 
 h1 {
-    font-family: Pacifico, serif;
+    font-family: Pacifico, cursive;
     margin-bottom: 4rem;
 }
 
@@ -146,6 +146,14 @@ button, .button-primary {
     width: 100%;
     margin: 1rem auto 0 auto;
     text-align: center;
+}
+
+input[disabled], button[disabled] {
+    opacity: 0.5;
+}
+
+input[disabled]:hover, button[disabled]:hover {
+    cursor: not-allowed;
 }
 
 /* media queries */

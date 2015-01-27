@@ -2,8 +2,8 @@
     <section class="story-input">
         {{#if currentUser}}
             <form class="row">
-                <input class="columns ten newStory" type="text" placeholder="Add a chapter to this story..." maxlength="140">
-                <button class="columns two button-primary newStory">Submit &rarr;</button>
+                <input class="columns ten newStory" type="text" maxlength="140" {{otherAttributes}}>
+                <button class="columns two button-primary newStory" disabled={{isLastAuthor}}>Submit &rarr;</button>
             </form>
         {{/if}}
     </section>
