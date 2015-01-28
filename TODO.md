@@ -3,13 +3,12 @@
 - Notifications shouldn't be created if the user to be notified is on the page that the notification is for (possible?)
     - Will probably have to track which page each user is on to do this - prob not worth it.
     - Are notifications even worth having ?
-- Animations and related polishing stuff
-    - need to animate routes but it seems no good way to do this yet 
 - Replace dropdown used for notifications with a better library
     - could add growl style notifcations too
+- Animations and related polishing stuff
+    - need to animate routes but it seems no good way to do this yet 
 - Implement turns for writing chapters
     - each user should only be able to write one consecutive chapter per story
-- Number chapters
 - Add server-side error logging
 
 #Done

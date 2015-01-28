@@ -28,7 +28,7 @@ p {
 a {
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     transition: border-color 125ms ease-out, color 250ms ease-out, background-color 250ms ease-out;
 }
 
@@ -75,10 +75,6 @@ button, .button-primary {
 
 .notification-link {
     padding: 0.2rem 0.66rem;
-}
-
-.notification-link:hover {
-    border: none;
 }
 
 .sweet-alert button {
