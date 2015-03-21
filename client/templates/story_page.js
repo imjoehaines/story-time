@@ -32,7 +32,7 @@ Template.storyPage.helpers({
 Template.storyPage.events({
     'submit': function(e) {
         e.preventDefault();
-        var newChapterInput = $('input.newStory');
+        var newChapterInput = $('input.newChapter');
         var newChapter = newChapterInput.val();
         newChapterInput.val('');
 

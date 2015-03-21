@@ -2,8 +2,12 @@
     <section class="story-input">
         {{#if currentUser}}
             <form class="row">
-                <input class="columns ten newStory" type="text" maxlength="140" {{otherAttributes}}>
-                <button class="columns two button-primary newStory" disabled={{isLastAuthor}}>Submit &rarr;</button>
+                <div class="input-container">
+                    <input class="newChapter columns ten" type="text" maxlength="140" {{otherAttributes}}>
+                    <span class="character-count"><em>x</em> characters left</span>
+                </div>
+
+                <button class="columns two button-primary newChapter" disabled={{isLastAuthor}}>Submit &rarr;</button>
             </form>
         {{/if}}
     </section>

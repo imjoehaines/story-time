@@ -152,6 +152,14 @@ input[disabled]:hover, button[disabled]:hover {
     cursor: not-allowed;
 }
 
+.input-container {
+    position: relative;
+}
+
+.character-count {
+    float: right;
+}
+
 /* media queries */
 @media (max-width: 400px) {
 
